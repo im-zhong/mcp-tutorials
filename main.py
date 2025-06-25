@@ -108,4 +108,5 @@ Forecast: {period['detailedForecast']}
 
 if __name__ == "__main__":
     # Initialize and run the server
+    # [06/25/25 21:05:39] INFO     Starting MCP server 'weather' with transport 'sse' on http://0.0.0.0:8000/sse/
     mcp.run(transport="sse", host="0.0.0.0", port=8000)
