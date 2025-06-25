@@ -4,7 +4,9 @@
 
 from typing import Any
 import httpx
-from mcp.server.fastmcp import FastMCP
+
+# from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 
 # The FastMCP class uses Python type hints and docstrings to automatically generate tool definitions, making it easy to create and maintain MCP tools.
 
@@ -106,4 +108,4 @@ Forecast: {period['detailedForecast']}
 
 if __name__ == "__main__":
     # Initialize and run the server
-    mcp.run(transport="sse")
+    mcp.run(transport="sse", host="0.0.0.0", port=8000)
