@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "weather": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/Users/zhangzhong/src/mcp-tutorials",
+                "run",
+                "main.py"
+            ]
+        }
+    }
+}
